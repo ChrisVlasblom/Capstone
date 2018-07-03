@@ -1,3 +1,6 @@
+
+/* GENERAL RULES */
+
 html{
   font-size: 18px;
   font-family: "Lato", sans-serif;
@@ -24,6 +27,13 @@ html{
   top: 56px;
 }
 
+.relative-top-mobile{
+  position: relative;
+  top: 40px;
+}
+
+/* HEADER SECTION */
+
 .header{
   display: flex;
   flex-direction: row;
@@ -43,6 +53,10 @@ html{
   margin-left: 24px;
 }
 
+nav .header-mobile{
+  display: none;
+}
+
 nav{
   display: flex;
   margin-right: 24px;
@@ -53,6 +67,35 @@ nav{
   display: inline-flex;
   margin-left: 16px;
 }
+
+@media only screen and (max-width: 850px){
+
+  .header{
+    display: none;
+  }
+
+  .header-mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    background-color: white;
+    border-bottom: 2px solid lightgray;
+    height: 64px;
+  }
+
+  .header-mobile img{
+    display: inline-flex;
+    margin-top: 1rem;
+  }
+
+}
+
+/* BANNER SECTION */
 
 .banner{
   background-color: lightgray;
@@ -79,21 +122,64 @@ nav{
 .banner-txt-1{
   display: flex;
   margin: 0px 50px;
+  width: 85%;
 }
 
 .banner-txt-2{
   display: flex;
   margin: 12px 50px;
+  width: 85%;
 }
 
 .banner-txt-3{
   display: flex;
   font-size: 1.2rem;
-  margin: 24px 50px;
   background-color: rgb(61, 60, 58);
   color: white;
-  padding: 8px 130px;
+  margin-left: 50px;
+  margin-top: 40px;
+  width: 85%;
+  padding: 8px;
+  justify-content: center;
 }
+
+.banner-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 850px){
+
+  .banner{
+    display: none;
+  }
+
+  .banner-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: lightgray;
+  }
+
+  .banner-mobile img{
+    width: 100%;
+  }
+
+  .banner-txt-1{
+    margin: 32px 16px;
+  }
+
+  .banner-txt-2{
+    margin: 0px 16px;
+  }
+
+  .banner-txt-3{
+    margin: 24px 16px 32px 16px;
+    padding: 8px;
+  }
+}
+
+/* INFORMATION SECTION */
 
 .information{
   display: inline-flex;
@@ -140,9 +226,60 @@ nav{
   justify-content: flex-start;
 }
 
+.highlight-text a{
+  color: rgb(7, 149, 247);
+  text-decoration: none;
+}
+
 .information-highlights .info-highlight:nth-child(3n){
   background-color: lightgray;
 }
+
+.information-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 850px){
+
+  .information{
+    display: none;
+  }
+
+  .information-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .information-mobile img{
+    width: 100%;
+    margin: 32px 16px 16px 16px;
+  }
+
+  .information-mobile h3{
+    font-size: 1.75rem;
+    font-weight: 590;
+    margin: 0px 0px 8px 16px;
+  }
+
+  .information-mobile p{
+    margin-left: 16px;
+    margin-bottom: 0px;
+  }
+
+  .information-mobile a{
+    color: rgb(7, 149, 247);
+    text-decoration: none;
+    margin-top: 8px;
+  }
+
+  .read-more-special{
+    padding-bottom: 32px;
+  }
+}
+
+/* LEARNING SECTION */
 
 .start-learning{
   background-color: lightgray;
@@ -192,6 +329,45 @@ nav{
 .course .course-large{
   margin-bottom: 11px;
 }
+
+.start-learning-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 850px){
+
+  .start-learning{
+    display: none;
+  }
+
+  .start-learning-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+  }
+
+  .start-learning-mobile h2{
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+
+  .start-learning-mobile h3{
+    background-color: lightgray;
+    padding: 16px 0 24px 16px;
+    margin: 8px 16px 0 16px;
+    font-size: 1.5rem;
+  }
+
+  .start-learning-mobile .start-learning-mobile-special{
+    margin-bottom: 32px;
+  }
+
+}
+
+/* THESIS EXHIBIT SECTION */
 
 .thesis-exhibit-container{
   display: inline-flex;
@@ -251,6 +427,37 @@ nav{
   margin-top: 0px;
 }
 
+.thesis-exhibit-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 850px){
+
+  .thesis-exhibit{
+    display: none
+  }
+
+  .thesis-exhibit-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .thesis-exhibit-mobile h2{
+    text-align: center;
+    margin: 32px 0 16px 0;
+  }
+
+  .thesis-exhibit-mobile video{
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+}
+
+/* FOOTER SECTION */
+
 .footer{
   display: flex;
   flex-direction: row;
@@ -268,4 +475,25 @@ nav{
 .footer li{
   display: inline-flex;
   margin-right: 24px;
+}
+
+.footer-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 850px){
+
+  .footer{
+    display: none;
+  }
+
+  .footer-mobile{
+    display: flex;
+    border-top: 2px solid lightgray;
+
+  }
+
+  .footer-mobile p{
+    margin: 16px;
+  }
 }
