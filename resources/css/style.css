@@ -343,6 +343,16 @@ nav{
   margin: 16px;
 }
 
+.course a{
+  color: rgb(61, 60, 58);
+  text-decoration: none;
+}
+
+.course a:hover{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .course-text{
   margin: 8px 16px;
   font-size: 0.9rem;
