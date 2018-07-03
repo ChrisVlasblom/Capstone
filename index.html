@@ -5,6 +5,7 @@
     <title>ColmarAcademy</title>
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
 
   <!-- Things to check:
@@ -12,6 +13,13 @@
   - 24px margin as a class
   - images alt text
   - highlight text
+  - matching text h3 etc
+  - class names specific enough
+  - redo margins
+  - possible borders
+  - hover
+  - links
+  - 
    -->
 
   <body>
@@ -37,43 +45,161 @@
     </div>
 
     <!-- Banner -->
-    <div class="banner">
+    <div class="banner relative-top">
 
       <img src="./resources/images/banner.jpg" alt="Banner image">
 
-      <p class="banner-learn">
-        <span class="banner-txt-1">Learn something new everyday</span>
-        <span class="banner-txt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+      <div class="banner-learn">
+        <h2 class="banner-txt-1 h2-layout">Learn something new everyday</h2>
+        <h3 class="banner-txt-2 h3-layout">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         <span class="banner-txt-3">Start here</span>
-      </p>
+      </div>
 
     </div>
 
     <!-- Information -->
 
-    <div class="information">
+    <div class="information relative-top">
 
-      <div class="practicing">
+      <div class="practicing-whole">
+
         <img src="./resources/images/information-main.jpg" alt="">
-        <h3>It doesn't hurt to keep practising</h3>
+        <h2 class="h2-layout">It doesn't hurt to keep practising</h2>
         <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
         <p>Emmanual, Sr Stratagist at Hiring.com</p>
+
       </div>
 
-      <div class="highlights">
+      <div class="information-highlights">
 
-        <div class="highlight">
-          <!-- <img src="./resources/images/information-orientation.jpg" alt="">
-          <p>
-            <span>Orientation Date</span>
-            <span>Tues 10/11 & Wed 10/12: 8am-3pm</span>
-            <span>Read more</span>
-          </p> -->
+        <div class="info-highlight">
+          <img src="./resources/images/information-orientation.jpg" alt="">
+          <div class="highlight-text">
+            <h3 class="h3-layout">Orientation date</h3>
+            <p>Tues 10/11 & Wed 10/12: 8am-3pm</p>
+            <p>Read more</p>
+          </div>
+        </div>
+
+        <div class="info-highlight">
+          <img src="./resources/images/information-campus.jpg" alt="">
+          <div class="highlight-text">
+            <h3 class="h3-layout">Our campus</h3>
+            <p>Find which campus is close by you</p>
+            <p>Read more</p>
+          </div>
+        </div>
+
+        <div class="info-highlight">
+          <img src="./resources/images/information-guest-lecture.jpg" alt="">
+          <div class="highlight-text">
+            <h3 class="h3-layout">Our guest lecture</h3>
+            <p>Join a keynote with Oliver Sack about music about medical treatment</p>
+            <p>Read more</p>
+          </div>
         </div>
 
       </div>
 
+    </div>
 
+    <!-- Start learning -->
+
+    <div class="start-learning relative-top">
+
+      <h2 class="h2-layout">Start learning</h2>
+
+      <div class="courses">
+
+        <div class="course">
+          <img src="./resources/images/course-software.jpg" alt="">
+          <p class="course-txt-1 h3-layout">Software engineering</p>
+          <p class="course-txt-2">COURSES</p>
+          <p class="course-txt-3">Web Development, Mobile Development, iOT, APIs</p>
+        </div>
+
+        <div class="course">
+          <img src="./resources/images/course-computer-art.jpg" alt="">
+          <p class="course-txt-1 h3-layout">Computer art</p>
+          <p class="course-txt-2">COURSES</p>
+          <p class="course-txt-3 course-large">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+        </div>
+
+        <div class="course">
+          <img src="./resources/images/course-design.jpg" alt="">
+          <p class="course-txt-1 h3-layout">Design</p>
+          <p class="course-txt-2">COURSES</p>
+          <p class="course-txt-3">User Expierence Deisgn, User Research, Visual Design</p>
+        </div>
+
+        <div class="course">
+          <img src="./resources/images/course-data.jpg" alt="">
+          <p class="course-txt-1 h3-layout">Data</p>
+          <p class="course-txt-2">COURSES</p>
+          <p class="course-txt-3">Data Science, Big Data, SQL, Data Visualization</p>
+        </div>
+
+        <div class="course">
+          <img src="./resources/images/course-business.jpg" alt="">
+          <p class="course-txt-1 h3-layout">Business</p>
+          <p class="course-txt-2">COURSES</p>
+          <p class="course-txt-3">Product Development, Business Development, Startup</p>
+        </div>
+
+        <div class="course">
+          <img src="./resources/images/course-marketing.jpg" alt="">
+          <p class="course-txt-1 h3-layout">Marketing</p>
+          <p class="course-txt-2">COURSES</p>
+          <p class="course-txt-3">Analytics, Content Marketing, Mobile Marketing</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Thesis exhibit -->
+
+    <div class="thesis-exhibit relative-top">
+
+      <h2 class="h2-layout">Thesis Exhibit</h2>
+
+      <div class="thesis-exhibit-container">
+
+        <div class="thesis-video">
+          <video width="100%" autoplay loop>
+            <source src="./resources/videos/thesis.mp4" type="video/mp4">
+          </video>
+          <h3>Reimagine urban</h3>
+          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequate neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+        </div>
+
+        <div class="thesises">
+
+          <div class="thesis">
+            <img src="./resources/images/thesis-fisma.jpg" alt="">
+            <div class="thesis-text">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+
+          <div class="thesis">
+            <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+            <div class="thesis-text">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer relative-top">
+      <p>&copy2016 Colmar Academy. All rights reserved</p>
+      <ul>
+        <li>Terms</li>
+        <li>Privacy</li>
+      </ul>
 
     </div>
 
