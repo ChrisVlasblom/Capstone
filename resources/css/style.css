@@ -18,13 +18,9 @@ html{
   font-weight: 590;
 }
 
-.m24{
-  margin-left: 24px;
-}
-
 .relative-top{
   position: relative;
-  top: 56px;
+  top: 22px;
 }
 
 .relative-top-mobile{
@@ -66,6 +62,16 @@ nav{
 .header li{
   display: inline-flex;
   margin-left: 16px;
+}
+
+.header a{
+  text-decoration: none;
+  color: rgb(61, 60, 58);
+}
+
+.header a:hover{
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 850px){
@@ -119,19 +125,19 @@ nav{
   width: 30%;
 }
 
-.banner-txt-1{
+.banner-title{
   display: flex;
   margin: 0px 50px;
   width: 85%;
 }
 
-.banner-txt-2{
+.banner-text{
   display: flex;
   margin: 12px 50px;
   width: 85%;
 }
 
-.banner-txt-3{
+.banner-button{
   display: flex;
   font-size: 1.2rem;
   background-color: rgb(61, 60, 58);
@@ -141,6 +147,18 @@ nav{
   width: 85%;
   padding: 8px;
   justify-content: center;
+  text-decoration: none;
+}
+
+.banner-learn a,
+.banner-mobile a{
+  color: white;
+  text-decoration: none;
+}
+
+.banner-learn .banner-button:hover,
+.banner-mobile .banner-button:hover{
+  background-color: rgb(105, 105, 105);
 }
 
 .banner-mobile{
@@ -165,16 +183,16 @@ nav{
     width: 100%;
   }
 
-  .banner-txt-1{
+  .banner-title{
     margin: 32px 16px;
   }
 
-  .banner-txt-2{
+  .banner-text{
     margin: 0px 16px;
   }
 
-  .banner-txt-3{
-    margin: 24px 16px 32px 16px;
+  .banner-button{
+    margin: 24px auto 32px auto;
     padding: 8px;
   }
 }
@@ -235,6 +253,12 @@ nav{
   background-color: lightgray;
 }
 
+.information a:hover,
+.information-mobile a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 .information-mobile{
   display: none;
 }
@@ -250,11 +274,12 @@ nav{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
   }
 
   .information-mobile img{
-    width: 100%;
-    margin: 32px 16px 16px 16px;
+    margin: 16px auto 16px auto;
+    width: 100%
   }
 
   .information-mobile h3{
@@ -314,15 +339,16 @@ nav{
   width: 100%;
 }
 
-.course-txt-1{
+.course-title{
   margin: 16px;
 }
 
-.course-txt-2{
+.course-text{
   margin: 8px 16px;
+  font-size: 0.9rem;
 }
 
-.course-txt-3{
+.course-details{
   margin: 8px 0px 32px 16px;
 }
 
@@ -363,6 +389,21 @@ nav{
 
   .start-learning-mobile .start-learning-mobile-special{
     margin-bottom: 32px;
+  }
+
+  .start-learning-mobile a{
+    color: rgb(61, 60, 58);
+    text-decoration: none;
+  }
+
+  /* .start-learning-mobile a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+  } */
+
+  .start-learning-mobile h3:hover{
+    background-color: rgb(61, 60, 58);
+    color: lightgray;
   }
 
 }
@@ -475,6 +516,16 @@ nav{
 .footer li{
   display: inline-flex;
   margin-right: 24px;
+}
+
+.footer a{
+  text-decoration: none;
+  color: rgb(61, 60, 58);
+}
+
+.footer a:hover{
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .footer-mobile{
